@@ -52,6 +52,22 @@ document.getElementById('btn').onclick = function() {
 }
 
 
+//User can press enter on slope to calculate Velocity and Slope
+// Get the input field
+var input = document.getElementById("slope");
+// Execute a function when the user releases a key on the keyboard
+input.addEventListener("keyup", function(event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+    document.getElementById("btn").click();
+  }
+});
+
+
+
 // function compareDiameters() {
 //     var ratios = [];
 //     for (i=0; i < actualDiameter.length; i++) {

@@ -6,13 +6,12 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .visuallyhidden:not(:focus):not(:active) {position: absolute;width: 1px;height: 1px;margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(0 0 0 0);overflow: hidden;}
 
-
 .wrapper {
   width: 40%;
-  margin: 100px auto;
+  margin: 2% auto;
 }
 
-h1{
+h1, h4{
   text-align: center;
 }
 
