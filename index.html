@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>Capacity & Velocity of Circular Concrete Pipes by Manning's Equation</h1>
+    <div class="input"> <!-- Diameter Selection from JS Array  -->
+      <label for="diameters">Select the Nominal Pipe Size (mm)</label>
+      <select id="diameters"></select> 
+    </div>
+    <div class="input">
+      <label for="slope">What is your slope? (m/m)</label> <!-- Slope Input  -->
+      <input type="number" id="slope" name="slope" required
+             minlength="1" maxlength="5" step='0.01' min='0.01' max='12.5' value="1">  
+      <button id="btn">Select</button>
+    </div>
+    <div class="output"> <!-- Velocity Output Section  -->
+      <label for="capacity">Velocity (m/sec)</label>
+      <output type="text" id="velocity" value=""></output>
+    </div>
+    <div class="output"> <!-- Capacity Output Section  -->
+      <label for="capacity">Capacity (m&sup3;/s)</label>
+      <output id="capacity" value=""></output>
+      <label for="capacity">Capacity (L/sec)</label>
+      <output id="capacityL-S" value=""></output>
+    </div>
+    <div>
+      <h4>Always Check Your Work!</h4>
+    </div>
+  </div>
+</body>
+
+<script src="./js/manning.js"></script>
+
+</html>
